@@ -62,3 +62,29 @@ public class ButtonDemo extends JPanel {
         return resetToZero;
     }
 }
+
+public class fx_main {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            JFrame frame = new JFrame("Button Demo");
+
+            ButtonDemo buttonDemo = new ButtonDemo();
+            ButtonDemo displayMessage = new ButtonDemo();
+            TasksList newTask = new TasksList();
+            displayMessage.incrementCount();
+
+            frame.add(buttonDemo);
+            frame.add(displayMessage);
+
+
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.pack();
+            frame.setLocationRelativeTo(null);
+            frame.setVisible(true);
+        });
+    }
+}
+
+
+
+
