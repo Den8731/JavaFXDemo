@@ -70,7 +70,6 @@ public class fx_main {
 
             ButtonDemo buttonDemo = new ButtonDemo();
             ButtonDemo displayMessage = new ButtonDemo();
-            TasksList newTask = new TasksList();
             displayMessage.incrementCount();
 
             frame.add(buttonDemo);
